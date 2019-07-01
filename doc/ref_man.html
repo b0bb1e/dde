@@ -2567,7 +2567,7 @@ new Phrase({notes: [new Note({time: 0, dur: 1, pitch: 60, velocity: 0.25, channe
     <details id="Phrase.start_doc_id" class="doc_details"><summary>start</summary>
     Plays the phrase. Will call Midi.init() if Midi has yet to be enabled.
     Returns the input phrase as is.
-    You can also play a phrase by selecting it's soruce code and clicking <button>Eval&Start</button>
+    You can also play a phrase by selecting its soruce code and clicking <button>Eval&Start</button>
     </details>
 
     <details id="Phrase.arpeggio_doc_id" class="doc_details"><summary>arpeggio</summary>
@@ -2979,7 +2979,7 @@ Example:<pre><code title="not in TestSuite"> speak({speak_data: [true, "It is", 
     <details id="make_url_doc_id" class="doc_details"><summary>make_url</summary>
         <i>url</i> is a poorly designed language for transfering data on the web.
         <a target="_blank" href="https://en.wikipedia.org/wiki/Uniform_Resource_Locator">Documentation.</a>
-        It's normal behavior is as an asyncrhonous function call, where the
+        Its normal behavior is as an asyncrhonous function call, where the
         call is typically on a web device known as a 'client', and it is sent to
         a different device on the web known as a 'server'.
         <p></p>
@@ -3008,7 +3008,6 @@ Example:<pre><code title="not in TestSuite"> speak({speak_data: [true, "It is", 
         This later form makes it easy to compute and set indivudal args.<br/>
         Example:<pre><code>
       var args = {x: 12.3 * 10}
-      args.y = 40 + 5
       make_url("www.ibm.com", args)</code> => <samp>"http://www.ibm.com?x=123&y=45"</samp></pre>
     </details>
 </details> <!-- end Web -->
@@ -3344,7 +3343,7 @@ new Job({name: "my_job",
           If you have a move_to instruction in a Job's do_list that is not passed
           a pose, it defaults to the value of the Job's default_workspace_pose.<br/>
           Below we show a Job with a move_to instruction that does <i>not</i>
-          default it's workspace_pose, but rather creates it explicitly.
+          default its workspace_pose, but rather creates it explicitly.
           A pose is composed of an xyz array, and an orientation array.<br/>
           <i>Example:</i><br/>
 <pre><code>new Job({name: "my_job",
@@ -3407,7 +3406,7 @@ new Job({name: "my_job",
              Any valid instruction location can be used
              (see doc in <a href="#" onclick="open_doc('Control.go_to_doc_id', event)">Control.go_to</a>) except
              that it must have no job or indicate the current job. Using <code>0</code>
-             set's the job's program_counter to instruction 0, causing the job to loop.
+             sets the job's program_counter to instruction 0, causing the job to loop.
              Using an instruction location 'offset' of greater than 0, such as a label,
              will cause the initial running of the job to execute its top instructions,
              but then subsequent iterations will start somewhere in the middle.<br/>
@@ -5197,7 +5196,7 @@ Example: <code>Dexter.move_home()</code>
 </details>
 
 <details id="Dexter.move_to_doc_id" class="doc_details"><summary>move_to</summary>
-        This instruction commands Dexter to move from where ever it is, to position its
+        This instruction commands Dexter to move from wherever it is, to position its
         end effector at the given x, y, z location. It is complicated by the fact that
         usually there is more than one configuration of Dexter's joints that
         can achieve that position and that Dexter is inherently limited by the
@@ -5901,7 +5900,7 @@ Example:<br/><code title="unEVALable code fragment"> Robot.dexter0.joint_xyzs()<
 <!--
 <details id="Robot.dexter0.prop_doc_id" class="doc_details"><summary>prop</summary>
 <b>prop</b> is a Dexter instance method that takes a string
-naming a property and returns it's value.
+naming a property and returns its value.
 Most of the values are numbers.<br/>
 <i>Example</i>:<br/>
 <code>Robot.dexter0.prop("LINK1")</code> => <samp>0.1651</samp><p></p>
@@ -6989,7 +6988,7 @@ Each object has its own copy of the "fur" property.
 Setting one will not set the other.
 <p></p>
 JS6 class constructor methods can have a call to <code title="unEVALable code fragment"> super</code>.
-It's counterpart in DDE is a method whose name makes sense:
+Its counterpart in DDE is a method whose name makes sense:
 <code>callPrototypeConstructor</code>, documented below.
 </details>
 
@@ -7788,7 +7787,7 @@ document.addEventListener("click", function(e){
             })    </code></pre>
         <b>callback</b> A function of one argument. Any returned value will be ignored.
         It will be called when the user clicks a button in
-        a show_window. It's argument will be a literal object. Many of its properties are x and y positions
+        a show_window. Its argument will be a literal object. Many of its properties are x and y positions
         relative to the top-left of html elements in or containing the clicked position.
         <p></p>
         Others of its properties will be names and the corresponding values of input elements
